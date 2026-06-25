@@ -254,6 +254,28 @@ h3 {
 .hero {
   padding: clamp(2.5rem, 6vw, 4.5rem) 0 1rem;
 }
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+.hero__media img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+@media (max-width: 820px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+  .hero__media {
+    order: -1;
+    max-width: 26rem;
+  }
+}
 .hero__eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.12em;
