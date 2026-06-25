@@ -1,0 +1,54 @@
+---
+import { site } from '../data/site.js';
+const year = 2026;
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>{site.brand}</h4>
+        <p class="muted" style="margin:0;max-width:22rem;">
+          Hand-raised sugar glider joeys, matched to your home, with full DENR
+          paperwork and in-person delivery across the {site.areaServed}.
+        </p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/available-joeys">Available Joeys</a></li>
+          <li><a href="/how-reserving-works">How Reserving Works</a></li>
+          <li><a href="/our-practice">Our Practice</a></li>
+          <li><a href="/care-guide">Care Guide</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Care Guide</h4>
+        <ul>
+          <li><a href="/care-guide/what-is-a-sugar-glider">What Is a Sugar Glider?</a></li>
+          <li><a href="/care-guide/sugar-glider-price-philippines">Price in the Philippines</a></li>
+          <li><a href="/care-guide/what-do-sugar-gliders-eat">What They Eat</a></li>
+          <li><a href="/care-guide/sugar-glider-cage-setup">Cage Setup</a></li>
+          <li><a href="/care-guide/bonding-with-your-sugar-glider">Bonding</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Reserve</h4>
+        <p style="margin:0 0 0.5rem;">Call or text to reserve a joey.</p>
+        <a class="footer-phone" href={site.phoneHref}>{site.phoneDisplay}</a>
+        <p class="muted" style="margin:0.5rem 0 0;font-size:0.85rem;">
+          From {site.priceFrom}, DENR papers included.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© {year} {site.brand}. All rights reserved.</span>
+      <span>Sugar gliders are a 10–15 year commitment. Please read the care guide first.</span>
+    </div>
+  </div>
+</footer>

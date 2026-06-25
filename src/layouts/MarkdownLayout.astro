@@ -1,0 +1,53 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { frontmatter } = Astro.props;
+
+const {
+  title,
+  description,
+  schema = ['BreadcrumbList'],
+  breadcrumbs = [],
+  faqs = [],
+  author,
+  datePublished,
+  dateModified,
+  wide = false,
+} = frontmatter;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  schema={schema}
+  breadcrumbs={breadcrumbs}
+  faqs={faqs}
+  author={author}
+  datePublished={datePublished}
+  dateModified={dateModified}
+  ogType={schema?.includes('Article') ? 'article' : 'website'}
+>
+  <article class="section">
+    <div class="container">
+      {
+        breadcrumbs.length > 0 && (
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol>
+              {breadcrumbs.map((c, i) => (
+                <li>
+                  {i < breadcrumbs.length - 1 && c.path ? (
+                    <a href={c.path}>{c.name}</a>
+                  ) : (
+                    <span aria-current="page">{c.name}</span>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )
+      }
+      <div class={wide ? '' : 'prose'}>
+        <slot />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CallCTA from '../components/CallCTA.astro';
+import { site } from '../data/site.js';
+
+const title = 'Hand-Raised Sugar Gliders for Sale Philippines';
+const description =
+  'Bonded, hand-raised sugar glider joeys from ₱13,000 with DENR papers included and in-person delivery. Temperament-matched and supported for life. Call to reserve.';
+
+// Home carries Organization, WebSite and FAQPage.
+const faqs = [
+  {
+    q: 'How much is a sugar glider in the Philippines?',
+    a: 'Our hand-raised joeys start at ₱13,000, with the full DENR paperwork included in that price. A rarer colour or a bonded pair costs more. Call us for the exact figure for the joey you want.',
+  },
+  {
+    q: 'Are sugar gliders legal to keep in the Philippines?',
+    a: 'Yes, with proper documentation. They sit under wildlife regulation as a non-native species, so legal ownership should be registered. Every joey we place comes with full DENR paperwork, with ownership recorded in your name.',
+  },
+  {
+    q: 'How long do sugar gliders live?',
+    a: 'Ten to fifteen years with good care, which makes them a long-term commitment rather than a short-term pet.',
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  schema={['FAQPage']}
+  faqs={faqs}
+  ogType="website"
+>
+  <section class="hero">
+    <div class="container">
+      <p class="hero__eyebrow">Hand-raised. Documented. Bonded before they are yours.</p>
+      <h1>Hand-Raised Sugar Gliders for Sale in the Philippines</h1>
+      <p class="hero__lede">
+        A palm-sized marsupial that learns the sound of your voice, sleeps against
+        your heartbeat, and stays close for more than a decade. Ours are raised by
+        hand from the moment they leave the pouch, so the bond begins long before
+        you meet. If you have been looking for sugar gliders for sale in the
+        Philippines and want one that is already used to people, this is where the
+        search ends.
+      </p>
+      <CallCTA bare />
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <h2 class="mt-0">The difference you can feel in five minutes</h2>
+      <p class="lead">
+        There is a wide gap between a joey hand-raised in a home and an animal
+        pulled from a glass tank at a weekend stall. One has been held every day
+        since its eyes opened. The other has learned that hands mean stress.
+      </p>
+      <p class="muted" style="max-width:44rem;">
+        Every glider here is raised the first way. We know each one by temperament
+        before it ever goes home, which is the part that decides whether your first
+        month is a friendship or a fight.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="mt-0">What you bring home</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>A genuinely bonded joey</h3>
+          <p>Handled daily from out-of-pouch, so it already trusts the weight and warmth of a person.</p>
+        </div>
+        <div class="card">
+          <h3>A temperament match, not a transaction</h3>
+          <p>We pair you with the joey that suits your household, your patience, and your handling experience. A first-time keeper and a seasoned one do not get the same animal.</p>
+        </div>
+        <div class="card">
+          <h3>Full DENR paperwork, every purchase</h3>
+          <p>Legal ownership documented in your name. No grey areas, no animal you have to hide.</p>
+        </div>
+        <div class="card">
+          <h3>Support that outlasts the handover</h3>
+          <p>The first weeks decide everything. You can reach us through them, and after.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <h2 class="mt-0">What life with one is actually like</h2>
+      <p class="lead">
+        They wake at dusk. They will ride in a bonding pouch against your chest
+        while you cook, glide the length of a room to land on your shoulder, and
+        make a soft purring chatter that owners spend years trying to describe.
+        Kept well, they live ten to fifteen years, which means the joey you reserve
+        now is a companion for the next decade of your life.
+      </p>
+      <p class="muted" style="max-width:44rem;">
+        That length is the whole point. It is also the reason we are slow about who
+        we place them with.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:46rem;">
+      <h2 class="mt-0">An honest word before you decide</h2>
+      <p>
+        Sugar gliders are not a starter pet, and we would rather tell you that now
+        than after.
+      </p>
+      <p>
+        They are nocturnal, so your evenings become their mornings. They are social
+        to the point that a lone glider can decline, which is why we place them in
+        bonded pairs unless your home already has one waiting. They need a tall
+        enclosure, a real diet, and a keeper who reads up before the joey arrives,
+        not after.
+      </p>
+      <p>
+        If that sounds like a commitment rather than an impulse, you are exactly the
+        kind of home we look for. Start with the <a href="/care-guide">Care Guide</a>
+        if you are still deciding. There is no rush, and we will still be here.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container" style="max-width:46rem;">
+      <h2 class="mt-0">When you are ready, so is your joey</h2>
+      <p>
+        Call us and we will tell you which of the gliders here would thrive in your
+        home, what the paperwork covers, the exact price for the pairing you want,
+        and how we deliver to your area in person.
+      </p>
+      <CallCTA />
+      <p class="center muted" style="margin-top:1.5rem;">
+        Or <a href="/available-joeys">see the joeys available now →</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

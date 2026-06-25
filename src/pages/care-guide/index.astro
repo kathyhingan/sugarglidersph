@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CallCTA from '../../components/CallCTA.astro';
+
+const title = 'Sugar Glider Care Guide Philippines';
+const description =
+  'An honest sugar glider care guide for the Philippines: diet, cage, health, bonding, and joeys. Know what they need, then reserve your joey.';
+
+const breadcrumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Care Guide', path: '/care-guide' },
+];
+
+const start = [
+  {
+    href: '/care-guide/what-is-a-sugar-glider',
+    title: 'What Is a Sugar Glider?',
+    blurb: 'The species, plainly. Marsupial, not rodent. Where they come from, how they glide, and what living with one is really like.',
+  },
+  {
+    href: '/care-guide/are-sugar-gliders-good-pets',
+    title: 'Are Sugar Gliders Good Pets? And Is It Legal Here?',
+    blurb: 'The honest pros and cons, plus what the law says about keeping one in the Philippines.',
+  },
+  {
+    href: '/care-guide/sugar-glider-price-philippines',
+    title: 'How Much Is a Sugar Glider in the Philippines?',
+    blurb: 'What shapes the price, what the lifetime cost looks like, and why a cheap glider is rarely a bargain.',
+  },
+];
+
+const daily = [
+  {
+    href: '/care-guide/what-do-sugar-gliders-eat',
+    title: 'What Do Sugar Gliders Eat?',
+    blurb: 'The one area new owners get wrong most often, and the one with the highest stakes.',
+  },
+  {
+    href: '/care-guide/sugar-glider-cage-setup',
+    title: 'Sugar Glider Cage & Enclosure Setup',
+    blurb: 'Height over width, bar spacing, the wheel that will not hurt them, and what to skip.',
+  },
+  {
+    href: '/care-guide/sugar-glider-lifespan-health',
+    title: 'Lifespan, Health & Smell, Honestly',
+    blurb: 'How long they live, what keeps them well, the truth about odour, and the rabies question.',
+  },
+  {
+    href: '/care-guide/bonding-with-your-sugar-glider',
+    title: 'Bonding With Your Sugar Glider',
+    blurb: 'Why the first weeks decide everything, what crabbing means, and how trust is actually built.',
+  },
+  {
+    href: '/care-guide/baby-sugar-glider-care',
+    title: 'Raising a Baby Sugar Glider',
+    blurb: 'Joey care, what out-of-pouch means, and why we never send one home too early.',
+  },
+  {
+    href: '/care-guide/sugar-glider-colours-morphs',
+    title: 'Sugar Glider Colours & Morphs',
+    blurb: 'Classic grey through mosaic, leucistic, and platinum, and why colour is the last thing to choose on.',
+  },
+];
+---
+
+<BaseLayout title={title} description={description} schema={['BreadcrumbList']} breadcrumbs={breadcrumbs}>
+  <section class="section">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li><span aria-current="page">Care Guide</span></li>
+        </ol>
+      </nav>
+
+      <h1>Sugar Glider Care Guide for the Philippines</h1>
+      <p class="lead">
+        Most sugar glider problems trace back to one thing: an owner who learned
+        the animal after bringing it home instead of before. This guide is here to
+        flip that order. Read it and you will know what a glider actually needs,
+        what it costs you in time, and whether it suits your life, before you commit
+        to a decade with one.
+      </p>
+      <p class="muted" style="max-width:44rem;">
+        We would rather you decide a sugar glider is not for you here than discover
+        it in month three. If you read all of this and still want one, you are
+        exactly the owner we hope to place a joey with.
+      </p>
+
+      <h2>Start here</h2>
+      <div class="guide-list">
+        {start.map((g) => (
+          <a href={g.href}>
+            <strong>{g.title}</strong>
+            <span>{g.blurb}</span>
+          </a>
+        ))}
+      </div>
+
+      <h2>The daily care</h2>
+      <div class="guide-list">
+        {daily.map((g) => (
+          <a href={g.href}>
+            <strong>{g.title}</strong>
+            <span>{g.blurb}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container" style="max-width:46rem;">
+      <h2 class="mt-0">When you have read enough</h2>
+      <p>If the care makes sense and the commitment fits, see the joeys ready now.</p>
+      <CallCTA />
+      <p class="center muted" style="margin-top:1.5rem;">
+        Or <a href="/available-joeys">see the joeys available now →</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CallCTA from '../components/CallCTA.astro';
+---
+
+<BaseLayout
+  title="Page Not Found"
+  description="That page could not be found. Browse the care guide or see the sugar glider joeys available now."
+  noindex={true}
+>
+  <section class="section">
+    <div class="container center" style="max-width:38rem;">
+      <p class="hero__eyebrow">404</p>
+      <h1>That page wandered off</h1>
+      <p class="lead" style="margin-inline:auto;">
+        The page you were after is not here. It may have moved, or the link was
+        mistyped. Here is the way back.
+      </p>
+      <p style="margin:1.5rem 0;">
+        <a class="btn btn--ghost" href="/">Back to home</a>
+        <a class="btn btn--ghost" href="/available-joeys">See available joeys</a>
+        <a class="btn btn--ghost" href="/care-guide">Care guide</a>
+      </p>
+      <CallCTA />
+    </div>
+  </section>
+</BaseLayout>

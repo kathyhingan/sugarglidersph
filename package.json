@@ -1,0 +1,20 @@
+{
+  "name": "sugarglidersph",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sugar Gliders Philippines — hand-raised sugar glider joeys for sale, with a full care guide.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "@fontsource-variable/fraunces": "^5.1.0",
+    "@fontsource-variable/inter": "^5.1.0",
+    "astro": "^5.2.5"
+  }
+}

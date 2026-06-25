@@ -1,0 +1,59 @@
+---
+import { site } from '../data/site.js';
+import GliderMark from './GliderMark.astro';
+
+// Mark the current page in the nav. Normalise trailing slashes.
+const here = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const nav = [
+  { href: '/available-joeys', label: 'Available Joeys' },
+  { href: '/how-reserving-works', label: 'How Reserving Works' },
+  { href: '/our-practice', label: 'Our Practice' },
+  { href: '/care-guide', label: 'Care Guide' },
+  { href: '/faq', label: 'FAQ' },
+];
+const isCurrent = (href) => here === href || (href !== '/' && here.startsWith(href + '/'));
+---
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label={`${site.brand} home`}>
+      <GliderMark />
+      <span>{site.shortBrand}</span>
+    </a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="main-nav"
+      aria-label="Toggle menu"
+    >
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Primary">
+      {
+        nav.map((item) => (
+          <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+            {item.label}
+          </a>
+        ))
+      }
+      <a class="btn btn--primary btn--sm nav-cta" href={site.phoneHref}>Call to Reserve</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('main-nav');
+  toggle?.addEventListener('click', () => {
+    const open = menu?.getAttribute('data-open') === 'true';
+    menu?.setAttribute('data-open', String(!open));
+    toggle.setAttribute('aria-expanded', String(!open));
+  });
+</script>

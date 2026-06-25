@@ -1,0 +1,86 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource-variable/fraunces';
+import '../styles/global.css';
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { site } from '../data/site.js';
+import { buildGraph } from '../lib/schema.js';
+
+const {
+  title,
+  description,
+  schema = ['BreadcrumbList'],
+  breadcrumbs = [],
+  faqs = [],
+  author,
+  datePublished,
+  dateModified,
+  ogType = 'website',
+  noindex = false,
+} = Astro.props;
+
+// Self-referencing canonical from the current path.
+const canonical = new URL(Astro.url.pathname, site.url).href;
+const fullTitle = title?.includes(site.brand) || title?.includes('Sugar Gliders')
+  ? title
+  : `${title} | ${site.brand}`;
+
+const jsonld = buildGraph({
+  title,
+  description,
+  canonical,
+  schema,
+  breadcrumbs,
+  faqs,
+  author,
+  datePublished,
+  dateModified,
+});
+const ogImage = new URL('/og-image.svg', site.url).href;
+---
+
+<!doctype html>
+<html lang="en-PH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+    <meta name="theme-color" content="#3c6b54" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={site.brand} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="en_PH" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
