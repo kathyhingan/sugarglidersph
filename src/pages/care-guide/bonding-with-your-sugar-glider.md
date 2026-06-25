@@ -4,6 +4,8 @@ title: 'Bonding With Your Sugar Glider: A Practical Guide'
 description: 'How sugar glider bonding really works, what crabbing means, and how to build trust in the first weeks. Start with a hand-raised joey. Reserve yours today.'
 author: 'Kathy'
 datePublished: '2026-06-25'
+featuredImage: '/joeys/kidlat.jpg'
+featuredAlt: 'A hand-raised sugar glider bonding with its keeper in the Philippines'
 schema: ['Article', 'FAQPage', 'BreadcrumbList']
 breadcrumbs:
   - { name: 'Home', path: '/' }

@@ -4,6 +4,8 @@ title: 'How Much Is a Sugar Glider in the Philippines?'
 description: 'Sugar glider price in the Philippines: hand-raised joeys from ₱13,000 with DENR papers included. What shapes the cost, plus lifetime budgeting. Call to reserve.'
 author: 'Kathy'
 datePublished: '2026-06-25'
+featuredImage: '/joeys/mochi.jpg'
+featuredAlt: 'A creamino sugar glider, a rarer colour morph, in the Philippines'
 schema: ['Article', 'FAQPage', 'BreadcrumbList']
 breadcrumbs:
   - { name: 'Home', path: '/' }

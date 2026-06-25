@@ -4,6 +4,8 @@ title: "What Is a Sugar Glider? A Philippines Owner's Guide"
 description: 'What is a sugar glider? A marsupial, not a rodent. How they glide, how long they live, and what owning one in the Philippines is really like. Reserve yours.'
 author: 'Kathy'
 datePublished: '2026-06-25'
+featuredImage: '/joeys/sinag.jpg'
+featuredAlt: 'Hand-raised classic grey sugar glider in the Philippines'
 schema: ['Article', 'FAQPage', 'BreadcrumbList']
 breadcrumbs:
   - { name: 'Home', path: '/' }

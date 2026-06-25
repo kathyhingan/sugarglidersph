@@ -4,6 +4,8 @@ title: 'Baby Sugar Glider Care: Joeys, OOP, and Timing'
 description: 'Baby sugar glider care explained: what out-of-pouch means, why timing matters, and how to settle a new joey. Start with a hand-raised one. Reserve yours.'
 author: 'Kathy'
 datePublished: '2026-06-25'
+featuredImage: '/joeys/sinag.jpg'
+featuredAlt: 'A hand-raised baby sugar glider joey in the Philippines'
 schema: ['Article', 'FAQPage', 'BreadcrumbList']
 breadcrumbs:
   - { name: 'Home', path: '/' }

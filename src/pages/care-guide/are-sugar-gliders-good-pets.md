@@ -4,6 +4,8 @@ title: 'Are Sugar Gliders Good Pets? Legal in the Philippines?'
 description: 'Are sugar gliders good pets, and are they legal in the Philippines? An honest look at the pros, cons, and DENR rules before you commit. Reserve your joey.'
 author: 'Kathy'
 datePublished: '2026-06-25'
+featuredImage: '/joeys/tala.jpg'
+featuredAlt: 'A hand-raised sugar glider climbing a branch in the Philippines'
 schema: ['Article', 'FAQPage', 'BreadcrumbList']
 breadcrumbs:
   - { name: 'Home', path: '/' }

@@ -4,6 +4,8 @@ title: 'Sugar Glider Cage Setup: Size, Bars & Safety Guide'
 description: 'A sugar glider cage done right: minimum size, half-inch bar spacing, the safe wheel, temperature, and what to skip. Set up before arrival. Reserve your joey.'
 author: 'Kathy'
 datePublished: '2026-06-25'
+featuredImage: '/joeys/tala.jpg'
+featuredAlt: 'A sugar glider climbing a branch inside its enclosure in the Philippines'
 schema: ['Article', 'FAQPage', 'BreadcrumbList']
 breadcrumbs:
   - { name: 'Home', path: '/' }

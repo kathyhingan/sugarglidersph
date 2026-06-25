@@ -4,6 +4,8 @@ title: 'What Do Sugar Gliders Eat? A Safe Diet Guide'
 description: 'What do sugar gliders eat? A balanced staple, limited fruit, and calcium-dusted insects, not a fruit bowl. Avoid the disease that kills them. Reserve your joey.'
 author: 'Kathy'
 datePublished: '2026-06-25'
+featuredImage: '/joeys/kidlat.jpg'
+featuredAlt: 'A hand-raised sugar glider being hand-fed in the Philippines'
 schema: ['Article', 'FAQPage', 'BreadcrumbList']
 breadcrumbs:
   - { name: 'Home', path: '/' }

@@ -4,6 +4,8 @@ title: 'Sugar Glider Colours & Morphs: Mosaic, White & More'
 description: 'A guide to sugar glider colours and morphs, from classic grey to mosaic, leucistic, and platinum, and why colour is the last thing to choose on. Reserve yours.'
 author: 'Kathy'
 datePublished: '2026-06-25'
+featuredImage: '/joeys/mochi.jpg'
+featuredAlt: 'A creamino sugar glider showing a pale colour morph, Philippines'
 schema: ['Article', 'FAQPage', 'BreadcrumbList']
 breadcrumbs:
   - { name: 'Home', path: '/' }

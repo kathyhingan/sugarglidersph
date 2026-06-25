@@ -372,17 +372,19 @@ h3 {
   flex-direction: column;
 }
 .joey__media {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   background: linear-gradient(135deg, var(--bg-soft), #e9e1d2);
   display: grid;
   place-items: center;
   color: #b6a98f;
   position: relative;
+  overflow: hidden;
 }
 .joey__media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* contain shows the whole joey without cropping; the soft gradient fills any gap */
+  object-fit: contain;
 }
 .joey__badge {
   position: absolute;
@@ -507,6 +509,22 @@ h3 {
 /* The bold wrapper around the CTA link should not double-bold the button */
 .prose p > strong > a[href^='tel:'] {
   font-weight: 600;
+}
+
+/* ---------- Article featured image (blog hero) ---------- */
+.article-hero {
+  margin: 1.25rem 0 2rem;
+  max-width: var(--readw);
+}
+.article-hero img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+  /* portrait photos show in full, capped so they never dominate the page */
+  max-height: 440px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 /* ---------- Breadcrumbs ---------- */

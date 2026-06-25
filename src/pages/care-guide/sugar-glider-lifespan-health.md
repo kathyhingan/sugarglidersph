@@ -4,6 +4,8 @@ title: 'Sugar Glider Lifespan, Health & Smell, Honestly'
 description: 'Sugar glider lifespan, the truth about smell, the rabies question, and the health signs that matter. An honest guide before you commit. Reserve your joey.'
 author: 'Kathy'
 datePublished: '2026-06-25'
+featuredImage: '/joeys/sinag.jpg'
+featuredAlt: 'A healthy hand-raised sugar glider with clear eyes and clean fur, Philippines'
 schema: ['Article', 'FAQPage', 'BreadcrumbList']
 breadcrumbs:
   - { name: 'Home', path: '/' }

@@ -12,6 +12,8 @@ const {
   datePublished,
   dateModified,
   wide = false,
+  featuredImage,
+  featuredAlt,
 } = frontmatter;
 ---
 
@@ -43,6 +45,17 @@ const {
               ))}
             </ol>
           </nav>
+        )
+      }
+      {
+        featuredImage && (
+          <figure class="article-hero">
+            <img
+              src={featuredImage}
+              alt={featuredAlt || title}
+              loading="eager"
+            />
+          </figure>
         )
       }
       <div class={wide ? '' : 'prose'}>
