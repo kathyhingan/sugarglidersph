@@ -9,50 +9,53 @@
 //
 // status options: "Available" | "Reserved" | "Bonded Pair"
 // temperament tags: Calm | Curious | Busy | Velcro (or your own)
+//
+// NOTE: morphs, out-of-pouch dates and temperaments below were assigned from
+// the photos and are easy to correct. Set the real values before launch.
 
 export const joeys = [
   {
-    name: 'Luna',
+    name: 'Sinag',
     morph: 'Classic Grey',
     sex: 'Female',
     oop: 'April 2026',
     temperament: 'Calm',
     status: 'Available',
     priceFrom: '₱13,000',
-    image: '',
-    note: 'Settled and gentle. A good match for a calmer, quieter household.',
-  },
-  {
-    name: 'Tala & Sinag',
-    morph: 'Classic Grey',
-    sex: 'Bonded Pair',
-    oop: 'March 2026',
-    temperament: 'Curious',
-    status: 'Bonded Pair',
-    priceFrom: '',
-    image: '',
-    note: 'A bonded pair that keep each other company. Kinder for a busy owner.',
+    image: '/joeys/sinag.jpg',
+    note: 'Settled and gentle, with the classic grey markings. A good first joey for a calmer household.',
   },
   {
     name: 'Mochi',
-    morph: 'Mosaic',
+    morph: 'Creamino',
     sex: 'Male',
     oop: 'April 2026',
     temperament: 'Velcro',
     status: 'Available',
     priceFrom: '',
-    image: '',
-    note: 'Never wants to leave a pocket. The one for someone who wants the bond up close.',
+    image: '/joeys/mochi.jpg',
+    note: 'A pale cream coat and never wants to leave a pocket. The one for someone who wants the bond up close.',
   },
   {
-    name: 'Yuki',
-    morph: 'Leucistic',
+    name: 'Tala',
+    morph: 'Classic Grey',
     sex: 'Female',
-    oop: 'February 2026',
-    temperament: 'Busy',
-    status: 'Reserved',
+    oop: 'May 2026',
+    temperament: 'Curious',
+    status: 'Available',
     priceFrom: '',
-    image: '',
-    note: 'Already spoken for. Tell us the temperament you want and we will hold the next that fits.',
+    image: '/joeys/tala.jpg',
+    note: 'Bright and busy on the branches, into everything. Suits an owner who wants the show.',
+  },
+  {
+    name: 'Kidlat',
+    morph: 'Classic Grey',
+    sex: 'Male',
+    oop: 'March 2026',
+    temperament: 'Busy',
+    status: 'Available',
+    priceFrom: '',
+    image: '/joeys/kidlat.jpg',
+    note: 'Already hand-feeding and confident with people. Bonds quickly for a keeper who is around in the evenings.',
   },
 ];
