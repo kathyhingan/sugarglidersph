@@ -25,6 +25,10 @@ export const site = {
   // Used in Organization / Article schema as the content author byline.
   author: 'Kathy',
 
+  // Publisher of record. Malaya Publishing is the main marketing agency.
+  publisher: 'Malaya Publishing',
+  publisherUrl: 'https://malayapublishing.com',
+
   tagline: 'Hand-raised sugar glider joeys, raised by hand and documented with DENR papers.',
 };
 
